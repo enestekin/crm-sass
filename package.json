@@ -1,0 +1,25 @@
+{
+  "name": "crm-sass",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "homepage": "https://github.com/enestekin/crm-sass#readme",
+  "bugs": {
+    "url": "https://github.com/enestekin/crm-sass/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enestekin/crm-sass.git"
+  },
+  "license": "ISC",
+  "author": "enes tekin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
