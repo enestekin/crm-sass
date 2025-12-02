@@ -14,13 +14,16 @@ services:
       - postgres-data:/var/lib/postgresql/data
 
   backend:
-    build: ./apps/backend
+    build:
+      context: ./backend
     container_name: crm-backend
     restart: always
     depends_on:
       - postgres
     environment:
       DATABASE_URL: postgres://admin:password@postgres:5432/crm
+      PORT: 3001
+      JWT_SECRET: somesecret
     ports:
       - "3001:3001"
 
